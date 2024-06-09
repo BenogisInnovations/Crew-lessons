@@ -1,0 +1,18 @@
+Write a PHP script that create 15 students with their details below:
+- First name
+- Middle name 
+- Lastname
+- Gender
+- Date of Birth
+- Class
+- Admission Date
+
+For each student record, display its data in myself format displaying all details. Eg: 
+Hello, my name is _student_full_name_. I am a _gender_
+I was born on the _date_of_birth.
+I am in class _class_
+I was admitted on the _admission_date
+THANK YOU!
+
+NOTE:
+* MAKE SURE TO COMMENT ALL YOUR VARIABLES and USE CAMELCASE FOR YOUR VARIABLE NAMING CONVENTION *
