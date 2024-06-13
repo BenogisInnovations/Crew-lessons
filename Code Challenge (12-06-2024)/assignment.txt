@@ -1,0 +1,43 @@
+Write a php program that will check student class and display based on his or her score, his or her grade and grade descriptor
+Now below are the conditions:
+------------ + --------
+    Range    + Grade
+-----------  + ----------
+    80 - 100 = 1
+    75 - 79 = 2
+    70 - 74 = 3
+    65 - 69 = 4
+    60 - 64 = 5
+    55 - 59 = 6
+    50 - 54 = 7
+    45 - 49 = 8
+    0 - 39 = 9
+
+------------ + -----------
+    Grade    + Descriptor
+-----------  + -----------
+    1 = EXCELLENT
+    2 = VERY GOOD
+    3 = GOOD
+    4 or 5 = AVERAGE
+    6 or 7 = BELOW AVERAGE
+    8 = POOR
+    9 = FAIL
+
+Example:
+Student Name : Kofi Anane
+Class : JHS 1
+Score: 75
+Grade: 2
+Descriptor: VERY GOOD
+
+NB:
+Your display should be in a table with this sturcture: 
+---------- + ---------- + --------  + ---------  + -------------
+NAME          CLASS         SCORE       GRADE       DESCRIPTOR
+---------- + ---------- + --------  + ---------  + -------------
+Kofi Anane      JHS 1       75           1           VERY GOOD
+
+
+OUTPUT YOUR TABLE IN AN HTML TABLE.
+
