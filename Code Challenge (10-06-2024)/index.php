@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 $firstName = "Gideon"; // Student first Name
 $lastName = "Yeboah";  //  Student Last Name
 $middleName="";      //  Student middle Name
@@ -136,7 +137,7 @@ $lastName = "Arhin";  //  Student Last Name
 $middleName="";      //  Student middle Name
 $Gender="male";      // Student gender
 $DOB= "3rd May 2017";    //Student date of birth
-$stuClass="Class 3";   // Student class
+$stuClass="Class 5";   // Student class
 $admissionDate="10/04/2015";    //  Student date of admission
 
 /******* displaying  data in the form of myself with records from the variable.*******/
@@ -242,5 +243,23 @@ I was born on the $DOB.
 I am in class $stuClass. <br> 
 I was admitted on the $admissionDate
 THANK YOU!";
+ include('./logic.php'); 
+// beginning of report table
+echo "<table border='1'>
+<tr>
+    <th>NAME</th>
+    <th>CLASS</th>
+    <th>SCORE</th>
+    <th>GRADE</th>
+    <th>DESCRIPTOR</th>
+</tr>
 
-?> 
+
+<tr>
+    <td>$studentName</td>
+    <td>$studentClass</td>
+    <td>$studentScore</td>
+    <td>$studentGrade</td>
+    <td>$studentDescriptor</td>
+</tr>
+</table>";
