@@ -74,7 +74,7 @@ function getDescriptor($grade) {
     }
 }
 
-// Here too, i'm creating HTML table to arrange my output nicely
+// Here too, i'm creating HTML table to arrange my output
 echo "<table border='1'>";
 echo "<tr>
         <th>NAME</th>
@@ -83,7 +83,7 @@ echo "<tr>
         <th>GRADE</th>
         <th>DESCRIPTOR</th>
       </tr>";
-// the foreach too as i said in the challenge 1, it helps us to display every record for each student in the variable student
+
 foreach ($students as $student) {
     $name = $student['name'];
     $class = $student['class'];
