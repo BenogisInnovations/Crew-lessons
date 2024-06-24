@@ -1,0 +1,20 @@
+1. Below are some variables. Group them in arrays. Put the first set into a single array and the second set in another array.
+2. Use For Loop, Foreach Loop, and While Loop to run each array and echo all the elements in each array.
+NB: In all you should have 9 loops, since you will be running 3 loops on each array.
+Remeber to comment your code and use camel case for the variable naming.
+
+
+$country1 = 'Germany';
+$country2 = 'Benin';
+$country3 = 'Ghana';
+$country4 = 'England';
+$country5 = 'France';
+$country6 = 'Korea';
+
+$Capital1 = 'Berlin';
+$Capital2 = 'Porto-Novo';
+$Capital3 = 'Accra';
+$Capital4 = 'London';
+$Capital5 = 'Paris';
+$Capital6 = 'Seoul';
+

@@ -1,0 +1,3 @@
+We talk about Switch cases.
+
+It very similar to that of if. Its up to us to decide what to use. But somtimes, its more conviniet to use switch when u have a particular condition to check through with.
