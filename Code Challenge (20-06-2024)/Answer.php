@@ -4,49 +4,44 @@ $class= 'JHS 3';
 $score= 20;
 $grade;
 $descriptor;
-if($score >= 80){
-     $grade = 1;
-    if($grade = 1){
-         $descriptor = 'Exellent';
-    }
-} else if ($score >= 75){
-     $grade = 2;
-    if($grade = 2){
-         $descriptor = 'Very good';
-    }
-}else if ($score >= 70){
-     $grade = 3;
-    if($grade = 3){
-         $descriptor = 'Good';}
-    }
-        else if ($score >= 65){
+switch (True) {
+     case ($score >= 80 && $score <= 100):
+         $grade = 1;
+         $descriptor = "EXCELLENT";
+         break;
+     case ($score >= 75 && $score <= 79):
+         $grade = 2;
+         $descriptor = "VERY GOOD";
+         break;
+     case ($score >= 70 && $score <= 74):
+         $grade = 3;
+         $descriptor = "GOOD";
+         break;
+     case ($score >= 65 && $score <= 69):
          $grade = 4;
-        if($grade = 4){
-             $descriptor = 'Average';}
-        }else if ($score >= 60){
-             $grade = 5;
-            if($grade = 5)
-            {
-                 $descriptor = ' Average';
-            }
-        }else if ($score >= 55){
-             $grade = 6;
-            if($grade = 6){
-                 $descriptor = 'Below Average';}
-            }else if ($score >= 50){
-                 $grade = 7;
-                if($grade = 7){
-                     $descriptor = 'Below Average';}
-                }else if ($score >= 45){
-                     $grade = 8;
-                    if($grade = 8){
-                        echo $descriptor = 'Pass';}
-                    }else if ($score >=0 && $score <39){
-                         $grade = 9;
-                        if($grade = 9){
-                             $descriptor = 'Fail';}
-                        }
-            
+         $descriptor = "AVERAGE";
+         break;
+     case ($score >= 60 && $score <= 64):
+         $grade = 5;
+         $descriptor = "AVERAGE";
+         break;
+     case ($score >= 55 && $score <= 59):
+         $grade = 6;
+         $descriptor = "BELOW AVERAGE";
+         break;
+     case ($score >= 50 && $score <= 54):
+         $grade = 7;
+         $descriptor = "BELOW AVERAGE";
+         break;
+     case ($score >= 45 && $score <= 49):
+         $grade = 8;
+         $descriptor = "POOR";
+         break;
+     case ($score >= 0 && $score <= 39):
+         $grade = 9;
+         $descriptor = "FAIL";
+         break;
+}
         
     ?>
 <!Doctype HTML>    

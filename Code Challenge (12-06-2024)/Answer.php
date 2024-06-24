@@ -1,104 +1,75 @@
 <?php
-// I'm creating a variable to hold the student name, class and score
-$students = [
-    [
-        'name' => 'Daniel Appiah Agyekum',
-        'class' => 'JHS 1',
-        'score' => 75
-    ],
-    [
-        'name' => 'Gideon Yeboah',
-        'class' => 'JHS 1',
-        'score' => 65
-    ],
-    [
-        'name' => 'Esther Nsiah',
-        'class' => 'JHS 1',
-        'score' => 55
-    ],
-    [
-        'name' => 'Yaw Sarfo',
-        'class' => 'JHS 1',
-        'score' => 45
-    ],
-    [
-        'name' => 'Doris Yaa Konadu',
-        'class' => 'JHS 1',
-        'score' => 35
-    ],
-];
-// these are the if function to generate grade of students base on the score
-function getGrade($score) {
-    if ($score >= 80 && $score <= 100) {
-        return 1;
-    } elseif ($score >= 75 && $score <= 79) {
-        return 2;
-    } elseif ($score >= 70 && $score <= 74) {
-        return 3;
-    } elseif ($score >= 65 && $score <= 69) {
-        return 4;
-    } elseif ($score >= 60 && $score <= 64) {
-        return 5;
-    } elseif ($score >= 55 && $score <= 59) {
-        return 6;
-    } elseif ($score >= 50 && $score <= 54) {
-        return 7;
-    } elseif ($score >= 45 && $score <= 49) {
-        return 8;
-    } else {
-        return 9;
+$name = 'Daniel Appiah Agyekum';
+$class= 'JHS 3';
+$score= 20;
+$grade;
+$descriptor;
+if($score >= 80){
+     $grade = 1;
+    if($grade = 1){
+         $descriptor = 'Exellent';
     }
-}
-
-// Fuction to give remarks or names to the gade
-function getDescriptor($grade) {
-    switch ($grade) {
-        case 1:
-            return "EXCELLENT";
-        case 2:
-            return "VERY GOOD";
-        case 3:
-            return "GOOD";
-        case 4:
-        case 5:
-            return "AVERAGE";
-        case 6:
-        case 7:
-            return "CREDIT";
-        case 8:
-            return "PASS";
-        case 9:
-            return "FAIL";
-        default:
-            return "UNKNOWN";
+} else if ($score >= 75){
+     $grade = 2;
+    if($grade = 2){
+         $descriptor = 'Very good';
     }
-}
+}else if ($score >= 70){
+     $grade = 3;
+    if($grade = 3){
+         $descriptor = 'Good';}
+    }
+        else if ($score >= 65){
+         $grade = 4;
+        if($grade = 4){
+             $descriptor = 'Average';}
+        }else if ($score >= 60){
+             $grade = 5;
+            if($grade = 5)
+            {
+                 $descriptor = ' Average';
+            }
+        }else if ($score >= 55){
+             $grade = 6;
+            if($grade = 6){
+                 $descriptor = 'Below Average';}
+            }else if ($score >= 50){
+                 $grade = 7;
+                if($grade = 7){
+                     $descriptor = 'Below Average';}
+                }else if ($score >= 45){
+                     $grade = 8;
+                    if($grade = 8){
+                        echo $descriptor = 'Pass';}
+                    }else if ($score >=0 && $score <39){
+                         $grade = 9;
+                        if($grade = 9){
+                             $descriptor = 'Fail';}
+                        }
+            
+        
+    ?>
+<!Doctype HTML>    
+    <body>
+        <table  border = 1; width = 50% ;>
+            <tr>
+            <th><center>NAME</center></th>
+            <th><center>CLASS</center></th>
+            <th><center>SCORE</center></th>
+            <th><center>GRADE</center></th>
+            <th><center>DESCRIPTOR</center></th>
+            </tr>
+            <tr>
+                <td><center><?php echo $name; ?></center></td>
+                <td><center><?php echo $class; ?></center></td>
+                <td><center><?php echo $score; ?></center></td>
+                <td><center><?php echo $grade; ?></center></td>
+                <td><center><?php echo $descriptor; ?></center></td>
+                
+            </tr>
+            
+        </table>
 
-// Here too, i'm creating HTML table to arrange my output
-echo "<table border='1'>";
-echo "<tr>
-        <th>NAME</th>
-        <th>CLASS</th>
-        <th>SCORE</th>
-        <th>GRADE</th>
-        <th>DESCRIPTOR</th>
-      </tr>";
+    </body>
 
-foreach ($students as $student) {
-    $name = $student['name'];
-    $class = $student['class'];
-    $score = $student['score'];
-    $grade = getGrade($score);
-    $descriptor = getDescriptor($grade);
-    
-    echo "<tr>
-            <td>{$name}</td>
-            <td>{$class}</td>
-            <td>{$score}</td>
-            <td>{$grade}</td>
-            <td>{$descriptor}</td>
-          </tr>";
-}
-
-echo "</table>";
-?>
+</html>
