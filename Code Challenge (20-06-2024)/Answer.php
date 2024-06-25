@@ -2,7 +2,7 @@
 //student info
 $studentName="Kofi Anane";
 $studentClass="JHS 1";
-$studentScore="75";
+$studentScore=75;
 $grade=" ";
 $gradedescriptor=" ";
 
@@ -10,39 +10,39 @@ $gradedescriptor=" ";
 //score range and grade of the student
 switch($studentScore){
 case ($studentScore >= 80 && $studentScore <= 100):
-    $grade= "1";
+    $grade= 1;
     break;
 
 case ($studentScore >= 75 && $studentScore <= 79):
-    $grade= "2";
+    $grade= 2;
     break;
 
 case ($studentScore >= 70 && $studentScore <= 74):
-    $grade= "3";
+    $grade= 3;
     break;
 
 case ($studentScore >= 65 && $studentScore <= 69):
-    $grade= "4";
+    $grade= 4;
     break;
 
 case ($studentScore >= 60 && $studentScore <= 64):
-    $grade= "5";
+    $grade= 5;
     break;
 
 case ($studentScore >= 55 && $studentScore <= 59):
-    $grade= "6";
+    $grade= 6;
     break;
 
 case ($studentScore >= 50 && $studentScore <= 54):
-    $grade= "7";
+    $grade= 7;
     break;
 
 case ($studentScore >= 45 && $studentScore <= 49):
-    $grade= "8";
+    $grade= 8;
     break;
 
 case ($studentScore >= 0 && $studentScore <= 39):
-    $grade= "9";
+    $grade= 9;
     break;
 
     default:
@@ -50,39 +50,39 @@ case ($studentScore >= 0 && $studentScore <= 39):
 }
 //student grade and descriptor
 switch($grade){
-    case "1":
+    case 1:
         $gradedescriptor="EXCELLENT";
         break;
 
-    case "2":
+    case 2:
         $gradedescriptor="VERY GOOD";
         break;
 
-    case "3":
+    case 3:
         $gradedescriptor="GOOD";
         break;
 
-    case "4":
+    case 4:
         $gradedescriptor="AVERAGE";
         break;
 
-    case "5":
+    case 5:
         $gradedescriptor="AVERAGE";
         break;
 
-    case "6":
+    case 6:
         $gradedescriptor="BELOW AVERAGE";
         break;
 
-    case "7":
+    case 7:
         $gradedescriptor="BELOW AVERAGE";
         break;
 
-    case "8":
+    case 8:
         $gradedescriptor="POOR";
         break;
 
-    case "9":
+    case 9:
         $gradedescriptor="FAIL";
         break;
 
