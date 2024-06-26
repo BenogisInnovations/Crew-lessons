@@ -1,0 +1,3 @@
+We talked about how to separate the php logic from the interface display thus the HTML
+
+So we use include to bring in our php incript inside out HTML codes.
