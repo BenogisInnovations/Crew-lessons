@@ -1,0 +1,5 @@
+Write a php function that perform calculator computation using switch statement.
+- It should have: addition, subtraction, division and multiplication computational ability
+- Any error you want to throw to the user, customize it to show proper grammer error
+- You can use html design to make your work
+- Remember to comment and use camel case for the variable name

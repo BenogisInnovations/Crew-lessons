@@ -1,0 +1,3 @@
+We discuss the final piece of loop: do-while loop
+We began Functions and talked about what fucntion is, how to create and the importance of it
+- We conculued with a juicy assignment -
