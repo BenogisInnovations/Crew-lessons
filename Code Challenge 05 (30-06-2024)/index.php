@@ -28,6 +28,9 @@ include 'Assignment.php';
         $num2 = $_POST['num2'];
         $operation = $_POST['operation'];
 
+    // the if statement above takes user input 
+    // comments wasn't givving me acces to comment above     
+
         // this is a parameterized function to undergo the operation based on user input
         $result = calculate($num1, $num2, $operation);
         // shows results to the user
