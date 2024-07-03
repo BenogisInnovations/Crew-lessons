@@ -17,19 +17,20 @@ include 'Assignment.php';
             <option value="add">Add (+)</option>
             <option value="subtract">Subtract (-)</option>
             <option value="multiply">Multiply (×)</option>
-            <option value="divide">Divide (÷)</option>
+            <option value="divide">Divide (/)</option>
         </select>
         <input type="number" name="num2" placeholder="Enter second number" required>
         <button type="submit">Calculate</button>
-    </form>
-    
+    </form> 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $num1 = $_POST['num1'];
         $num2 = $_POST['num2'];
         $operation = $_POST['operation'];
+
+        // this is a parameterized function to undergo the operation based on user input
         $result = calculate($num1, $num2, $operation);
-        
+        // shows results to the user
         echo "<h1>Result: $result</h1>";
     }
     ?>
