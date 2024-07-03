@@ -1,5 +1,5 @@
 <?php
-// Declaring my function
+// Declaring my function ✅ Good Commenting
 function calculator($num1, $num2,$operator){ 
     //I'm issueing command on how th operators shold work
     switch ($operator) {
@@ -23,11 +23,10 @@ function calculator($num1, $num2,$operator){
     
 $num1 = 10;
 $num2 = 0;
-$operator = '_';
+$operator = '/';
 $result = calculator($num1, $num2,$operator);
 echo"Result: " . $result;
-
-
     ?>
 
+⭐⭐⭐⭐⭐ WELL DONE 👏👏👏👏👏
 
