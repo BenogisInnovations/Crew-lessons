@@ -1,12 +1,9 @@
 <?php
-// Takes input from user and stores it into num1 and num2
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $operation = $_POST['operation'];
+
+// Funtion to control the calculation 
+function calculate($num1, $num2, $operation) {
     $result = 0;
 
-    // this controls the operations to be performed 
     switch ($operation) {
         case "add":
             $result = $num1 + $num2;
@@ -29,6 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             break;
     }
 
-    echo "<h1>Result: $result</h1>";
+    return $result;
 }
 ?>
