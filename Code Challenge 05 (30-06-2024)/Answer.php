@@ -20,6 +20,7 @@ function calculator($num1, $num2,$operator){
         return "I accept only Divison, Multiplication, Subtraction and Addition";
 }
 }
+//Input or my data 
     
 $num1 = 10;
 $num2 = 0;
