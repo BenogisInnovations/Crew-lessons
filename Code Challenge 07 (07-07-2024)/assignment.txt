@@ -1,0 +1,6 @@
+Complete the codes in the edulink_school_code_script.php file.
+
+NB:
+1. Comment your code
+2. add expected function scopes
+3. return where expected and echo where expected
