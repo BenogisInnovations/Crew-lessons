@@ -1,0 +1,30 @@
+Below is a student data, write php functions that display student total score, remark, grade and aggregate
+NB: Aggregate is obtained by sum of first 4 subject grade plus best 2 subjects
+
+$student = [
+    ['English',85],
+    ['Maths',62],
+    ['Science',45],
+    ['Social',50],
+    ['BDT',34],
+    ['RME',90],
+    ['ICT',82],
+    ['French',77],
+    ['PE',63],
+    ['Orals',43],
+];
+
+Display out like:
+
+Student1 | TOTAL SCORE: _______ | Aggregate
+***********************************************
+English | 85 | 01 | EXCELLENT
+Maths   | 62 | .. | .........
+Science | 45 | .. | .........
+Social  | 50 | .. | .........
+BDT     | 34 | .. | .........
+RME     | 90 | .. | .........
+ICT     | 82 | .. | .........
+French  | 77 | .. | .........
+PE      | 85 | .. | .........
+Orals   | 43 | .. | .........
