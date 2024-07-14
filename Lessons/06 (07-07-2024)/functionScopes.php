@@ -18,14 +18,25 @@
 
 // Class
 # Class name should begin with Capital Letter ALWAYS!!!!!!
-class EduLinkSchoolCode {
+class EduLinkSchoolCodeGenerator {
+
+    #NB: A function inside a class is called a METHOD
+    #---------------------------------------------------
 
     // This function returns the edulink school code for client schools
-    public function getSchoolCode(){
+    public function main($region, $SchoolType, $schoolName){
         // STEP 1: Get the region the school is in
+        $schoolRegion = $this->getSchoolRegion('Ashanti Region');
         // STEP 2: Get the school type | Private or Public
+        $schoolType = $this->getSchoolType('Private');
         // STEP 3: Get the school character prefix
+        $schoolPrefix = $this->getSchoolPrefix('Grace Action Faith International School');
+        // AK1-EDGHN
+        $schoolCode = $schoolRegion.$schoolType.'-'.$schoolPrefix;
         // STEP 4: check if school code exists and append the @edulink domain
+        $fullEduLinkSchoolCode = $this->verifySchoolCodeAndAppendDomain($schoolCode);
+        return $fullEduLinkSchoolCode;
+        // eg: AK1-EDGHN@EDULINKGHANA.NET
     }
     
     // This function will return the two character region code. eg: Ashanti Region = AK
@@ -72,4 +83,15 @@ class EduLinkSchoolCode {
     }
 }
 
+// Instantiate the class and assign to a variable
+$generator1 = new EduLinkSchoolCodeGenerator();
+$generator2 = new EduLinkSchoolCodeGenerator();
+$generator3 = new EduLinkSchoolCodeGenerator();
+$generator4 = new EduLinkSchoolCodeGenerator();
 
+// You can then call the class functions
+echo $generator1->main('Greater Accra','Private','NABY Educational Institute');
+echo $generator2->main('Ashanti Region','Public','Tafo M/A JHS');
+// echo $generator3->main();
+// echo $generator4->main();
+// echo $generator1->getSchoolRegion('Ashanti Region');
