@@ -7,47 +7,47 @@
 # array names plural 
 $country = ["Germany","Benin","Ghana","England","France","Korea"]; 
 $capital = ['Berlin','Accra','London','Paris','Seoul'];
-// Separate it with a line between the arrays
+// For loop
 for($i = 0; $i < count($country); $i++) {
     # ✅ PERFECT : Do what u are instructed do | indentation
-    echo "I Love $country[$i]. <br>"; 
+    echo "$country[$i]. <br>"; 
 }
 "<p>"; # echo, close tags, you could have use visible symbols
-# ✅ PERFECT
+//# ✅ PERFECT
      
      # ✅ PERFECT : Do what u are instructed do | indentation
-     for($i = 0; $i < count($capital); $i++) {
+for($i = 0; $i < count($capital); $i++) {
         echo "$capital[$i] is my capital.<br>";
-        }'<p>';
+}'<p>';
          # echo, close tags, you could have use visible symbols
         # ✅ PERFECT
         
        
-       # indentation
-        foreach($country as $country){
-                    echo "$country ".'<br>';
-        }
+// Foreach loop
+foreach($country as $country){
+    echo "$country ".'<br>';
+}
         # indentation
-        foreach($capital as $capital){
-                echo "$capital ".'<br>';
-    }
+foreach($capital as $capital){
+    echo "$capital ".'<br>';
+}
+//While loop
+$country = ['Germany','Benin','Ghana','England','France','Korea'];
+$capital = ['Berlin','Accra','London','Paris','Seoul'];
    
-    // $country = ['Germany','Benin','Ghana','England','France','Korea'];
-    // $capital = ['Berlin','Accra','London','Paris','Seoul'];
-   
-    $i = 0;
-    $sumofarray = count($country);
+$i = 0;
+$sumofarray = count($country);
 
-    while ($i < $sumofarray) {
-    echo $country[$i]. "<br>";
+while ($i < $sumofarray) {
+ echo $country[$i]. "<br>";
     $i++;
 }
 $i = 0;
 $sumofarray = count($capital);
 
 while ($i < $sumofarray) {
-echo $capital[$i]. "<br>";
-$i++;
+ echo $capital[$i]. "<br>";
+ $i++;
 }
 # Pending scoring
 ?>
