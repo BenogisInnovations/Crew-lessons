@@ -45,3 +45,12 @@ while ($i< count($countries)) {
  echo $countries[$i];
  $i++;
  }
+
+echo "<br>";
+
+ $i = 0;
+ while ($i< count($capitals))
+ echo "<br>"; {
+  echo $capitals[$i];
+  $i++;
+  }
