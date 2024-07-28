@@ -42,6 +42,7 @@ foreach($countries as $country){
 // using while loop to run each array
  $i = 0;
 while ($i< count($countries)) {
+  echo "<br>";
  echo $countries[$i];
  $i++;
  }
@@ -49,8 +50,8 @@ while ($i< count($countries)) {
 echo "<br>";
 
  $i = 0;
- while ($i< count($capitals))
- echo "<br>"; {
+ while ($i< count($capitals)){
+  echo "<br>";
   echo $capitals[$i];
   $i++;
   }
